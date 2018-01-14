@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="别见黄花落的博客">
 <meta property="og:description" content="一、基本概念1.LHS与RHS引擎在变量查询时使用的方法。如果查找的目标是对变量进行赋值（查找左值），那么就会使用LHS查询，不成功的LHS引用会导致自动隐式地创建一个全局变量。如果目的是获取变量的值（查找非左值），就会使用RHS查询，不成功的RHS引用会导致抛出ReferenceError异常。 2.执行环境（execution context）执行环境定义了变量或函数有权访问的其他变量，决定了">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-14T21:42:37.319Z">
+<meta property="og:updated_time" content="2018-01-14T21:48:02.748Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js中有关作用域的总结">
 <meta name="twitter:description" content="一、基本概念1.LHS与RHS引擎在变量查询时使用的方法。如果查找的目标是对变量进行赋值（查找左值），那么就会使用LHS查询，不成功的LHS引用会导致自动隐式地创建一个全局变量。如果目的是获取变量的值（查找非左值），就会使用RHS查询，不成功的RHS引用会导致抛出ReferenceError异常。 2.执行环境（execution context）执行环境定义了变量或函数有权访问的其他变量，决定了">
@@ -176,7 +176,7 @@
       
         <h3 id="一、基本概念"><a href="#一、基本概念" class="headerlink" title="一、基本概念"></a>一、基本概念</h3><h4 id="1-LHS与RHS"><a href="#1-LHS与RHS" class="headerlink" title="1.LHS与RHS"></a>1.LHS与RHS</h4><p>引擎在变量查询时使用的方法。如果查找的目标是对变量进行赋值（查找左值），那么就会使用LHS查询，不成功的LHS引用会导致自动隐式地创建一个全局变量。如果目的是获取变量的值（查找非左值），就会使用RHS查询，不成功的RHS引用会导致抛出ReferenceError异常。</p>
 <h4 id="2-执行环境（execution-context）"><a href="#2-执行环境（execution-context）" class="headerlink" title="2.执行环境（execution context）"></a>2.执行环境（execution context）</h4><p>执行环境定义了变量或函数有权访问的其他变量，决定了他们各自的行为。</p>
-<h4 id="3-变量对象（variable-object）"><a href="#3-变量对象（variable-object）" class="headerlink" title="3.变量对象（variable object）"></a>3.变量对象（variable object）</h4><p>每个执行环境中都有一个与之关联的变量对象，环境中定义的所有变量和函数都保存在这个对象中。</p>
+<h4 id="3-变量对象（variable-object）"><a href="#3-变量对象（variable-object）" class="headerlink" title="3.变量对象（variable object）"></a>3.变量对象（variable object）</h4><p>每个执行环境中都有一个与之关联的变量对象，环境中定义的所有变量和函数都保存在这个对象中。<br><a id="more"></a></p>
 <h4 id="4-活动对象（activation-object）"><a href="#4-活动对象（activation-object）" class="headerlink" title="4.活动对象（activation object）"></a>4.活动对象（activation object）</h4><p>变量对象被调用的时候就称之为活动对象。</p>
 <h4 id="5-作用域链（scope-chain）"><a href="#5-作用域链（scope-chain）" class="headerlink" title="5.作用域链（scope chain）"></a>5.作用域链（scope chain）</h4><p>当代码在一个环境中执行时，会创建变量对象的一个作用域链。作用域链的用途，是保证对执行环境有权访问的所有变量和函数的有序访问。作用域链的前端，始终都是当前执行的代码所在环境的变量对象。如果这个环境是函数，则将其活动对象作为变量对象，活动对象在最开始时只包含一个变量，即arguments对象（这个对象在全局环境中不存在，全局执行环境被认为是window对象）</p>
 <h3 id="二、ES5的函数作用域"><a href="#二、ES5的函数作用域" class="headerlink" title="二、ES5的函数作用域"></a>二、ES5的函数作用域</h3><p>在ES5中是以函数为基本单位确定作用域的。<br>如</p>
