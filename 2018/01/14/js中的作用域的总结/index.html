@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://stevenbz.github.io">
-  <title>别见黄花落的博客</title>
+  <title>js中的作用域的总结－读书笔记 | 别见黄花落的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="别见黄花落的博客">
-<meta property="og:url" content="https://stevenbz.github.io/index.html">
+  <meta name="description" content="基本概念">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js中的作用域的总结－读书笔记">
+<meta property="og:url" content="https://stevenbz.github.io/2018/01/14/js中的作用域的总结/index.html">
 <meta property="og:site_name" content="别见黄花落的博客">
+<meta property="og:description" content="基本概念">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-14T15:44:56.419Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="别见黄花落的博客">
+<meta name="twitter:title" content="js中的作用域的总结－读书笔记">
+<meta name="twitter:description" content="基本概念">
   
     <link rel="alternative" href="/atom.xml" title="别见黄花落的博客" type="application/atom+xml">
   
@@ -150,16 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-js中的作用域的总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-js中的作用域的总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/14/js中的作用域的总结/">js中的作用域的总结－读书笔记</a>
+    <h1 class="article-title" itemprop="name">
+      js中的作用域的总结－读书笔记
     </h1>
   
 
@@ -177,6 +179,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -184,16 +207,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/14/js中的作用域的总结/">展开ß >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://stevenbz.github.io/2018/01/14/js中的作用域的总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/28/深入浅出React和Redux读书笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">深入浅出React和Redux－读书笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -213,145 +295,14 @@
 
 
 
-
   
-    <article id="post-深入浅出React和Redux读书笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/28/深入浅出React和Redux读书笔记/">深入浅出React和Redux－读书笔记</a>
-    </h1>
   
 
-        
-        <a href="/2017/11/28/深入浅出React和Redux读书笔记/" class="archive-article-date">
-  	<time datetime="2017-11-28T10:17:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第一章 React新的前端思维方式</p>
-<p>React的理念，归结为一个公式，就像下面这样：<br>UI=render(data)<br>    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如此一来，最终的用户界面，在render函数确定的情况下完全取决于输入数据。</p>
-<p>React的新概念</p>
-<p>JSX<br>    所谓JSX，是JavaScript的语法扩展，让我们在JavaScript中可以编写像HTML一样的代码。</p>
-<p>Virtual DOM<br>      要了解Virtual DOM，就要先了解DOM，DOM是结构化文本的抽象表达形式，特定于Web环境中，这个结构化文本就是HTML文本，HTML中的每个元素都对应DOM中的某个节点，这样，因为HTML元素的逐级包含关系，DOM节点自然就构成了一个树形结构，称为DOM树。<br>       既然DOM树是对HTML的抽象，那Virtual DOM就是对DOM树的抽象。Virtual DOM不会触及浏览器的部分，只是存在于JavaScript空间的树形结构，每次自上而下渲染React组件时，会对比这一次产生的Virtual DOM和上一次渲染的Virtual DOM，对比就会发现差别，然后修改真正的 DOM树时就只需要触及差别中的部分就行。</p>
-        
-          <a class="article-more-a" href="/2017/11/28/深入浅出React和Redux读书笔记/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/28/深入浅出React和Redux读书笔记/">展开ß >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-人工智能狂潮－读书笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/27/人工智能狂潮－读书笔记/">人工智能狂潮－读书笔记</a>
-    </h1>
   
 
-        
-        <a href="/2017/11/27/人工智能狂潮－读书笔记/" class="archive-article-date">
-  	<time datetime="2017-11-27T05:17:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第二章</p>
-<p>四个级别的人工智能。</p>
-<p>级别1 把单纯的控制程序称作 “人工智能”<br>级别2 传统人工智能<br>级别3 引入机器学习的人工智能<br>级别4 引入深度学习的人工智能</p>
-<p>哲学家John Searle提出的强人工智能与弱人工智能的区别：<br>强人工智能：具备正确的输入与输出、被施与合理程序化的计算机，与拥有心智的人是没有任何区别的。<br>弱人工智能：计算机没有必要拥有心智，只要能够通过其有限的智能解决一些智力问题即可。<br>
-        
-          <a class="article-more-a" href="/2017/11/27/人工智能狂潮－读书笔记/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/27/人工智能狂潮－读书笔记/">展开ß >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -374,8 +325,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
