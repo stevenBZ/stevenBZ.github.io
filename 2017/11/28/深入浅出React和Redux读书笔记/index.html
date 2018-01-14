@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://stevenbz.github.io">
   <title>深入浅出React和Redux－读书笔记 | 别见黄花落的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###第一章 React新的前端思维方式 React的理念，归结为一个公式，就像下面这样：UI=render(data)    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用">
+  <meta name="description" content="第一章 React新的前端思维方式React的理念，归结为一个公式，就像下面这样：UI=render(data)    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深入浅出React和Redux－读书笔记">
 <meta property="og:url" content="https://stevenbz.github.io/2017/11/28/深入浅出React和Redux读书笔记/index.html">
 <meta property="og:site_name" content="别见黄花落的博客">
-<meta property="og:description" content="###第一章 React新的前端思维方式 React的理念，归结为一个公式，就像下面这样：UI=render(data)    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如">
+<meta property="og:description" content="第一章 React新的前端思维方式React的理念，归结为一个公式，就像下面这样：UI=render(data)    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如此一来，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-14T21:52:08.191Z">
+<meta property="og:updated_time" content="2018-01-14T21:53:13.755Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入浅出React和Redux－读书笔记">
-<meta name="twitter:description" content="###第一章 React新的前端思维方式 React的理念，归结为一个公式，就像下面这样：UI=render(data)    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如">
+<meta name="twitter:description" content="第一章 React新的前端思维方式React的理念，归结为一个公式，就像下面这样：UI=render(data)    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如此一来，">
   
     <link rel="alternative" href="/atom.xml" title="别见黄花落的博客" type="application/atom+xml">
   
@@ -174,14 +174,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###第一章 React新的前端思维方式</p>
-<p>React的理念，归结为一个公式，就像下面这样：<br>UI=render(data)<br>    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如此一来，最终的用户界面，在render函数确定的情况下完全取决于输入数据。</p>
+        <h3 id="第一章-React新的前端思维方式"><a href="#第一章-React新的前端思维方式" class="headerlink" title="第一章 React新的前端思维方式"></a>第一章 React新的前端思维方式</h3><p>React的理念，归结为一个公式，就像下面这样：<br>UI=render(data)<br>    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如此一来，最终的用户界面，在render函数确定的情况下完全取决于输入数据。</p>
 <p>React的新概念</p>
 <p>JSX<br>    所谓JSX，是JavaScript的语法扩展，让我们在JavaScript中可以编写像HTML一样的代码。</p>
 <p>Virtual DOM<br>      要了解Virtual DOM，就要先了解DOM，DOM是结构化文本的抽象表达形式，特定于Web环境中，这个结构化文本就是HTML文本，HTML中的每个元素都对应DOM中的某个节点，这样，因为HTML元素的逐级包含关系，DOM节点自然就构成了一个树形结构，称为DOM树。<br>       既然DOM树是对HTML的抽象，那Virtual DOM就是对DOM树的抽象。Virtual DOM不会触及浏览器的部分，只是存在于JavaScript空间的树形结构，每次自上而下渲染React组件时，会对比这一次产生的Virtual DOM和上一次渲染的Virtual DOM，对比就会发现差别，然后修改真正的 DOM树时就只需要触及差别中的部分就行。</p>
 <a id="more"></a>
-<p>###第二章 设计高质量的React组件</p>
-<p>组件划分原则：高内聚、低耦合。</p>
+<h3 id="第二章-设计高质量的React组件"><a href="#第二章-设计高质量的React组件" class="headerlink" title="第二章 设计高质量的React组件"></a>第二章 设计高质量的React组件</h3><p>组件划分原则：高内聚、低耦合。</p>
 <p>React组件的数据：<br>React组件的数据分为两种：prop和state。无论prop 或者state的改变，都可以引发组件的重新渲染。<br>React的prop：prop是从外部传递给组件中的数据，一个React组件通过定义自己能够接受的prop就定义了自己的对外公共接口。<br> React的state:state代表React组件的内部状态。由于React组件不能修改传入的prop，所以需要记录自身数据变化，就需要使用state。</p>
 <p>组件的生命周期</p>
 <p>React严格定义了组件的生命周期，生命周期可能会经历如下三个过程：<br>装载过程（Mount），也就是把组件第一次在DOM树中渲染的过程；<br>更新过程（Update），当组件被重新渲染的过程；<br>卸载过程（Unmount），组件从DOM中删除的过程；</p>
@@ -192,8 +190,7 @@
 <p>卸载过程</p>
 <p>componentWillUnmount</p>
 <p>React组件state和prop的局限<br>数据如果出现重复，带来的一个问题就是如何保证重复的数据一致，如果数据存多份而且不一致，那就很难决定到底使用哪个数据作为正确结果了。</p>
-<p>###第三章 从Flux到Redux</p>
-<p>Flux<br>Flux是Facebook推出的一种单向数据流框架。我们知道，在实际的MVC框架实现中，总是允许View和Model可以直接通信，当业务逻辑变的复杂时，这种行为会导致复杂的依赖关系。Flux要求数据必须是单向流动的，从而避免这种错误的行为。<br>一个Flux应用包含四个部分，它们分别是:<br>Dispatcher，处理动作分发，维持Store之间的依赖关系；<br>Store，负责存储数据和处理数据相关逻辑；<br> Action，驱动Dispatcher的JavaScript对象；<br>View，视图部分，负责显示用户界面</p>
+<h3 id="第三章-从Flux到Redux"><a href="#第三章-从Flux到Redux" class="headerlink" title="第三章 从Flux到Redux"></a>第三章 从Flux到Redux</h3><p>Flux<br>Flux是Facebook推出的一种单向数据流框架。我们知道，在实际的MVC框架实现中，总是允许View和Model可以直接通信，当业务逻辑变的复杂时，这种行为会导致复杂的依赖关系。Flux要求数据必须是单向流动的，从而避免这种错误的行为。<br>一个Flux应用包含四个部分，它们分别是:<br>Dispatcher，处理动作分发，维持Store之间的依赖关系；<br>Store，负责存储数据和处理数据相关逻辑；<br> Action，驱动Dispatcher的JavaScript对象；<br>View，视图部分，负责显示用户界面</p>
 <p>Flux的优点：单向数据流的管理方式，禁绝了数据流混乱的可能。<br>Flux的不足：1、Store之间依赖关系<br>                      2、难以进行服务器端渲染<br>                      3、Store混杂了逻辑和状态</p>
 <p>Redux<br>Flux的基本原则是“单向数据流”，Redux在此基础之上强调了三个基本原则：<br>1、唯一数据源。<br>2、保持状态只读。<br>3、数据改变只能通过纯函数完成。<br>在 Redux框架下，一个React组件基本上就是要完成以下两个功能：<br>1、和Redux Store打交道，读取Store的状态，用于初始化组件的状态，同时还要监听Store的状态改变；当Store状态发生变化时，需要更新组件状态，从而驱动组件重新渲染；当需要更新Strore状态时，就要派发action对象；<br>2、根据当前props和state渲染出用户界面</p>
 <p>容器组件和傻瓜组件<br>可以将这两个任务拆分给两个组件做，分别承担一个任务，然后把两个组件嵌套起来，完成原本一个组件完成的所有任务。<br>外层组件是一个容器组件，内层组件是一个展示组件。展示组件就是一个纯函数，不需要有状态，即展示组件只需要根据props来渲染结果，不需要state。</p>
@@ -201,43 +198,35 @@
 <p>class Provider extends Component {<br>    getChildContext(){<br>        return{<br>              store:this.props.store<br>     }<br>}<br>      render(){<br>             return this.props.children;<br>}<br>}</p>
 <p>为了让Provider能够被React认可为一个Context的提供者，还需要指定Provider的childContextType属性，代码为<br>Provider.childContextTypes={<br>    store:PropTypes.object<br>}<br>Provider还需要定义类的childContextTypes，必须和getChildContext对应，只有这两者都齐备，Provider的子组件才有可能访问到context<br>子组件的contextTypes赋值和Provider.childContextTypes一样的值，两者必须一致，不然就无法访问到context，代码如下<br>xxx.contextTypes={<br>     store:PropTypes.object<br>}<br>在子组件中，所有对store的访问，都是通过this.context.store来完成的<br>此外，构造函数要变为<br>constructor(props,context){<br>    super(props,context)<br>}<br> 在调用super的时候，一定要带上context参数<br>注意：应该慎用context，因为全局变量会使程序变得难以控制。</p>
 <p>React-Redux<br>这个库实现了上面提到的2个改进React应用的方法。<br>connect:连接容器组件和傻瓜组件，形式为 connect(mapStateToProps,mapDispatchToProps)(傻瓜组件)<br>Provider:提供包含store的context，React-Redux要求store不仅是一个object，还必须是一个包含了三个函数的object，这3个object分别是subscribe,dispatch,getState。</p>
-<p>###第四章 模块化React和Redux应用</p>
-<p>按角色组织代码结构<br>如MVC中把代码文件分别放在controllers,models,views文件夹中，有些React开发者会把代码分成reducers,actions,components,containers这些文件夹，这种做法并不可取。原因是每次修改一个功能时要在几个不同的文件夹之间跳转，对开发人员很不友好。</p>
+<h3 id="第四章-模块化React和Redux应用"><a href="#第四章-模块化React和Redux应用" class="headerlink" title="第四章 模块化React和Redux应用"></a>第四章 模块化React和Redux应用</h3><p>按角色组织代码结构<br>如MVC中把代码文件分别放在controllers,models,views文件夹中，有些React开发者会把代码分成reducers,actions,components,containers这些文件夹，这种做法并不可取。原因是每次修改一个功能时要在几个不同的文件夹之间跳转，对开发人员很不友好。</p>
 <p>Redux应用适合按功能组织代码</p>
 <p>在Redux中要注意一个状态节点只属于一个功能模块</p>
 <p>Redux中提供了combineReducers把多个reducer组合起来</p>
 <p>ref属性：当一个包含ref属性的React组件完成装载（mount）后，会看一看ref属性是不是一个函数，如果是一个函数，就会调用这个函数，参数就是这个组件代表的DOM元素。（注意：慎用这个属性，因为React的目的之一是远离DOM这个是非之地）</p>
 <p>JSX中可以使用任何形式的js表达式，但不能使用“语句”，因此for和while循环在JSX中是行不通的。</p>
 <p>对于动态数量的子组件，每一个子组件都必须带上一个能够唯一标识这个组件的key属性</p>
-<p>###第五章 React组件的性能优化</p>
-<p>单个组件的性能优化<br>React组件的更新原理是当组件渲染出Virtual DOM树后，与原来的Virtual DOM树进行比较来渲染不同的部分，虽然比原来的DOM树渲染性能有所优化，但是Virtual DOM树的建立和比较也要花费不少时间，这里就是优化的关键部分。<br>React的shouldComponentupdate就是用来确定是否需要重新渲染的。 默认返回ture。<br>react-redux的connect为容器组件自动重写了shouldComponentupdate，通过“浅比较”容器组件传给傻瓜组件的props是否变化来确定是否重新渲染。所谓“浅比较”就是用js中的===进行比较，对于简单props只比较值是否相同，对于复杂props则比较这两个props是不是同一个对象的引用。</p>
+<h3 id="第五章-React组件的性能优化"><a href="#第五章-React组件的性能优化" class="headerlink" title="第五章 React组件的性能优化"></a>第五章 React组件的性能优化</h3><p>单个组件的性能优化<br>React组件的更新原理是当组件渲染出Virtual DOM树后，与原来的Virtual DOM树进行比较来渲染不同的部分，虽然比原来的DOM树渲染性能有所优化，但是Virtual DOM树的建立和比较也要花费不少时间，这里就是优化的关键部分。<br>React的shouldComponentupdate就是用来确定是否需要重新渲染的。 默认返回ture。<br>react-redux的connect为容器组件自动重写了shouldComponentupdate，通过“浅比较”容器组件传给傻瓜组件的props是否变化来确定是否重新渲染。所谓“浅比较”就是用js中的===进行比较，对于简单props只比较值是否相同，对于复杂props则比较这两个props是不是同一个对象的引用。</p>
 <p>多个组件的性能优化<br>在比较Virtual DOM树时，为了提高效率，React采用了复杂度为O(N) 的比较方法，这种比较方法有一些缺陷，需要开发者帮助React变得更聪明。<br>使用key<br>在子组件中使用key可以让React识别子组件的位置，要注意的是，key应该是固定不变的，动态使用key（如使用数组下标作为key值）可能会让React “认错”子组件，这是非常危险的。</p>
-<p>###第六章 React高阶组件</p>
-<p>简单来说，一个高阶组件就是一个函数，这个函数接受一个组件作为参数，然后返回一个新的组件作为结果，而且这个新的组件具有原来的组件没有的功能。这里的组件不是组件实例，而是一个组件类或者无状态组件函数。<br>关于高阶组件，有两种实现方式，一种是代理方式，另一种的继承方式。代理方式更容易实现和控制，继承方式的唯一优势是可以操纵特定组件的生命周期函数。<br>和高阶组件相比，“以函数为子组件”的模式更加灵活。</p>
-<p>###第七章 Redux和服务器通信</p>
-<p>在React通常使用fetch来进行网络访问，fetch返回一个Promise对象。fetch的问题是只要服务器返回一个合法的HTTP响应就会认为响应成功，即使这个HTTP响应的状态码是代表出错的400或500.正因如此，我们在then中首先要检查传入参数response的status字段，只有status是代表成功的200时才继续，否则以错误处理。当response的状态码为200时，也不能直接读取response的内容，因为fetch在接收到HTTP响应的报头部分就会调用then。所以response.body返回的不是JSON，而是返回一个新的Promise。</p>
+<h3 id="第六章-React高阶组件"><a href="#第六章-React高阶组件" class="headerlink" title="第六章 React高阶组件"></a>第六章 React高阶组件</h3><p>简单来说，一个高阶组件就是一个函数，这个函数接受一个组件作为参数，然后返回一个新的组件作为结果，而且这个新的组件具有原来的组件没有的功能。这里的组件不是组件实例，而是一个组件类或者无状态组件函数。<br>关于高阶组件，有两种实现方式，一种是代理方式，另一种的继承方式。代理方式更容易实现和控制，继承方式的唯一优势是可以操纵特定组件的生命周期函数。<br>和高阶组件相比，“以函数为子组件”的模式更加灵活。</p>
+<h3 id="第七章-Redux和服务器通信"><a href="#第七章-Redux和服务器通信" class="headerlink" title="第七章 Redux和服务器通信"></a>第七章 Redux和服务器通信</h3><p>在React通常使用fetch来进行网络访问，fetch返回一个Promise对象。fetch的问题是只要服务器返回一个合法的HTTP响应就会认为响应成功，即使这个HTTP响应的状态码是代表出错的400或500.正因如此，我们在then中首先要检查传入参数response的status字段，只有status是代表成功的200时才继续，否则以错误处理。当response的状态码为200时，也不能直接读取response的内容，因为fetch在接收到HTTP响应的报头部分就会调用then。所以response.body返回的不是JSON，而是返回一个新的Promise。</p>
 <p>利用代理功能解决跨域问题。</p>
 <p>在React中在componentDidMount中进行网络访问</p>
 <p>redux-thunk<br>redux-thunk是Redux异步操作的解决方案之一。thunk是一个计算机编程术语，表示辅助调用另一个子程序的子程序。<br>按redux-thunk的想法，在Redux的单向数据流中，在action对象被reducer函数处理之前，是插入异步功能的时机。<br>redux-thunk的工作是检查action对象是不是函数，如果不是函数就放行，完成普通action对象的生命周期，而如果发现action对象是函数，那就执行这个函数，并把Store的dispatch函数和getState函数作为参数传递到函数中去，处理过程到此为止，不会让这个异步action对象继续往前派发到reducer函数。</p>
-<p>###第八章 单元测试</p>
-<p>只要应用得当，React和Redux应用的可测性非常高，因为对应单元测试写出来大多就是对纯函数的测试。<br>单元测试框架：<br>1 Mocha+断言库chai<br>2 Facebook出品的Jest</p>
+<h3 id="第八章-单元测试"><a href="#第八章-单元测试" class="headerlink" title="第八章 单元测试"></a>第八章 单元测试</h3><p>只要应用得当，React和Redux应用的可测性非常高，因为对应单元测试写出来大多就是对纯函数的测试。<br>单元测试框架：<br>1 Mocha+断言库chai<br>2 Facebook出品的Jest</p>
 <p>辅助类：</p>
 <ol>
 <li>Enzyme<br>2.sinon.js</li>
 </ol>
-<p>###第九章 扩展Redux</p>
-<p>Redux之所以广受欢迎，就是因为社区围绕Redux创建了很多扩展功能，形成了一个生态系统。</p>
+<h3 id="第九章-扩展Redux"><a href="#第九章-扩展Redux" class="headerlink" title="第九章 扩展Redux"></a>第九章 扩展Redux</h3><p>Redux之所以广受欢迎，就是因为社区围绕Redux创建了很多扩展功能，形成了一个生态系统。</p>
 <p>中间件<br>中间件的特点是：<br>中间件是独立的函数<br>中间件可以组合使用<br>中间件有一个统一的接口</p>
 <p>中间件处理的是 action对象，每个中间件都会接收到action对象，在处理完毕之后，就会把 action对象交给下一个中间件来处理，只有所有中间件都处理完action对象之后，才轮到reducer来处理action对象，然而，如果某个中间件觉得没有必要继续处理这个action对象了，就不会把action对象交给下一个中间件，对这个action对象的处理就此结束，也就轮不到reducer上场了。<br>每个中间件必须要定义成一个函数，返回一个接收next参数的函数，而这个函数接收next参数的函数又返回一个接收action参数的函数。next参数本身也是一个函数，中间件调用这个next函数通知Redux自己的处理工作已经结束。<br> 如：<br>function doNothingMiddleware({dispatch,getState}){<br>    return function(next){<br>        return function(action){<br>            return next(action)<br>}<br>}<br>}<br>中间件设计成这样的多层嵌套是因为Redux是根据函数式编程的思想来设计的，函数式编程的一个重要思想就是让每个函数的功能尽量小，然后通过函数的嵌套组合来实现复杂功能。</p>
 <p>使用中间件<br>两种方式：<br>一、使用Redux提供的applyMiddleware来包装createStore产生一个新的创建Store的函数，以使用redux-thunk 为例：<br>const configureStore=applyMiddleware(thunkMiddleware)(createStore)<br>const store=configureStore(reducer,initialState)<br>二、把applyMiddleware的结果当作Store Enhancer，和其它Enhancer混合之后作为createStore参数传入<br>如：<br>const storeEnhancer=compose(applyMiddleware(…middlewares))<br>const store=createStore(reducer,storeEnhancers)</p>
 <p>StoreEnhancer<br>Redux提供的创建Store的函数叫createStore,这个函数除了可以接受reducer和初试状体啊参数，还可以接受一个Store Enhancer参数，Store Enhancer是一个函数，这个函数接受一个createStore模样的函数为参数，返回一个新的createStore参数。一个什么都不做的Store Enhancer是这样的：<br>const doNothingEnhancer=(createStore)=&gt;(reducer,preloadedState,enhancer)=&gt;{<br>    const store=createStore(reducer,preloadedState,enhancer)<br>    return store<br>}<br>一个store对象中包含下列接口<br>dispatch<br>subscribe<br>getState<br>replaceReducer<br>每个接口都可以修改，当然无论如何修改，最后往往还是要调用原有对应的函数。</p>
-<p>###第十一章 多页面应用</p>
-<p>传统多页面应用切换页面的过程：<br>1）浏览器的地址发生变化指向新的URL，于是浏览器发起一个HTTP请求到服务器获取页面完整的HTML<br>2）浏览器获取到HTML内容后，解析HTML内容<br>3）浏览器根据解析的HTML内容确定还需要下载哪些其它资源，包括JavaScript和CSS资源<br>4）浏览器会根据HTML和其它资源渲染页面内容，然后等待用户的其他操作</p>
+<h3 id="第十一章-多页面应用"><a href="#第十一章-多页面应用" class="headerlink" title="第十一章 多页面应用"></a>第十一章 多页面应用</h3><p>传统多页面应用切换页面的过程：<br>1）浏览器的地址发生变化指向新的URL，于是浏览器发起一个HTTP请求到服务器获取页面完整的HTML<br>2）浏览器获取到HTML内容后，解析HTML内容<br>3）浏览器根据解析的HTML内容确定还需要下载哪些其它资源，包括JavaScript和CSS资源<br>4）浏览器会根据HTML和其它资源渲染页面内容，然后等待用户的其他操作</p>
 <p>而单页面应用要达到的目标是：<br>1）不同页面之间切换不会造成网页的刷新<br>2）页面内容和URL保持一致</p>
 <p>React-Router是一个帮助我们创建React单页应用的工具。</p>
 <p>集成Redux:<br>Redux遵从的一个重要原则就是“唯一数据源”，唯一数据源并不是说所有的数据都要存储在一个地方，而是说一个特定数据只存在一个地方，以路由为例，使用React-Router，即使结合了Redux，当前路由的信息也是存储在浏览器的URL上，而不是像其他数据一样存储在Redux的Store上，这样做并不违背“唯一数据源”的原则，获取路由信息的唯一数据源就是当前URL。但是当利用Redux Devtools做测试时，无法重现网页之间的切换，因为当前路由作为应用状态根本没有在Store状态上体现，而Redux Devtools操纵的只有状态。<br>为了克服这个缺点，我们可以利用react-router-redux库来同步浏览器URL和Redux的状态，虽然这违反了“唯一数据源”原则，但是只要两者绝对保持同步，就不会带来问题。</p>
-<p>###第十二章 同构</p>
-<p>服务器端渲染与浏览器端渲染<br>服务器端渲染就是对于来自浏览器的 HTTP请求，服务器通过访问存储器或者访问别的API服务之类的方式获得数据，然后根据数据渲染产生HTML，浏览器只要把HTML渲染出来，就是用户想要看到的结果。<br>浏览器端渲染就是由浏览器端完成路由结构与数据模板，生成HTML，只用API向服务器获取数据的模式。</p>
+<h3 id="第十二章-同构"><a href="#第十二章-同构" class="headerlink" title="第十二章 同构"></a>第十二章 同构</h3><p>服务器端渲染与浏览器端渲染<br>服务器端渲染就是对于来自浏览器的 HTTP请求，服务器通过访问存储器或者访问别的API服务之类的方式获得数据，然后根据数据渲染产生HTML，浏览器只要把HTML渲染出来，就是用户想要看到的结果。<br>浏览器端渲染就是由浏览器端完成路由结构与数据模板，生成HTML，只用API向服务器获取数据的模式。</p>
 <p>React可以讲网页内容，动态行为和样式全部封装在一个组件中，把浏览器端渲染的应用发挥到极致。</p>
 <p>网页性能指标：<br>TTFP(Time To First Paint):指的是从网页HTTP请求发出，则用户可以看到第一个有意义的内容渲染出来的时间差。<br>TTI(Time To Interactive):指的是从网页HTTP请求发出，到用户可以对网页内容进行交互的时间</p>
 

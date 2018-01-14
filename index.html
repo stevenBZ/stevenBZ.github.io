@@ -239,8 +239,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###第一章 React新的前端思维方式</p>
-<p>React的理念，归结为一个公式，就像下面这样：<br>UI=render(data)<br>    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如此一来，最终的用户界面，在render函数确定的情况下完全取决于输入数据。</p>
+        <h3 id="第一章-React新的前端思维方式"><a href="#第一章-React新的前端思维方式" class="headerlink" title="第一章 React新的前端思维方式"></a>第一章 React新的前端思维方式</h3><p>React的理念，归结为一个公式，就像下面这样：<br>UI=render(data)<br>    让我们来看看这个公式表达的含义，用户看到的界面（UI），应该是一个函数（在这里叫render）的执行结果，只接受数据（data）作为参数。这个函数是一个纯函数。所谓纯函数，指的是没有任何副作用，输出完全依赖于输入的函数，两次函数的调用如果输入相同，得到的结果也绝对相同。如此一来，最终的用户界面，在render函数确定的情况下完全取决于输入数据。</p>
 <p>React的新概念</p>
 <p>JSX<br>    所谓JSX，是JavaScript的语法扩展，让我们在JavaScript中可以编写像HTML一样的代码。</p>
 <p>Virtual DOM<br>      要了解Virtual DOM，就要先了解DOM，DOM是结构化文本的抽象表达形式，特定于Web环境中，这个结构化文本就是HTML文本，HTML中的每个元素都对应DOM中的某个节点，这样，因为HTML元素的逐级包含关系，DOM节点自然就构成了一个树形结构，称为DOM树。<br>       既然DOM树是对HTML的抽象，那Virtual DOM就是对DOM树的抽象。Virtual DOM不会触及浏览器的部分，只是存在于JavaScript空间的树形结构，每次自上而下渲染React组件时，会对比这一次产生的Virtual DOM和上一次渲染的Virtual DOM，对比就会发现差别，然后修改真正的 DOM树时就只需要触及差别中的部分就行。</p>
